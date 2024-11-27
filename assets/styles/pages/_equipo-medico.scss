@@ -1,0 +1,35 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/variables" as breakpoints;
+
+.equipo-medico__container img {
+  width: 100px;
+}
+
+.equipo-medico__filtros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: breakpoints.$breakpoint-lg) {
+    flex-direction: column;
+  }
+}
+
+.profesionales{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card{
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-block: 1rem;
+}

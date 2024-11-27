@@ -1,0 +1,75 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/variables" as breakpoints;
+@use "../abstracts/mixins" as mixins;
+
+header {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 8rem;
+  background-color: colors.$primary-color;
+  opacity: 0.9;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  height: 7rem;
+  @include mixins.box-shadow;
+  img {
+    width: 80px;
+    @include mixins.box-shadow;
+    margin-bottom: 1rem;
+  }
+  a {
+    color: colors.$white;
+
+    &:hover {
+      color: colors.$tertiary-color-hover;
+      text-decoration: none;
+    }
+  }
+  @media (max-width: breakpoints.$breakpoint-xl) {
+    padding-inline: 8rem;
+    height: auto;
+
+  }
+  @media (max-width: breakpoints.$breakpoint-lg) {
+    padding-inline: 5rem;
+    flex-direction: column;
+  }
+  @media (max-width: breakpoints.$breakpoint-xs) {
+    padding-inline: 1.25rem;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center ;
+  align-content: center ;
+  justify-content: center ;
+  @media (max-width: breakpoints.$breakpoint-lg) {
+    flex-direction: column;
+  }
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0 ;
+  
+  
+  @media (max-width: breakpoints.$breakpoint-lg) {
+    flex-direction: column;
+  }
+  @media (max-width: breakpoints.$breakpoint-sm) {
+    padding-inline: 2rem;
+  }
+}

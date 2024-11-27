@@ -1,0 +1,482 @@
+@charset "UTF-8";
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.75rem;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.btn-success {
+  background-color: #8bc34a !important;
+  border: none !important;
+}
+
+.btn-lg {
+  margin-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  margin-block: 1.5rem !important;
+  color: #3d3f41;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem !important;
+  color: #3d3f41;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-weight: 100;
+}
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+h6 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  li a {
+    padding: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 420px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+/*Solo hicimos esta modificación dado que estamos ocupando buttons de bootstrap */
+.btn {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-solicitar-contacto {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), 0px 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem 5rem;
+  background-color: rgba(91, 192, 235, 0.6117647059);
+  font-weight: bold;
+  color: #f6f8f8;
+  text-transform: uppercase;
+}
+.btn-solicitar-contacto:hover {
+  background-color: #5bc0eb;
+  color: #ffffff;
+}
+
+.equipo-medico__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.equipo-medico__input label {
+  display: block;
+  font-weight: bold;
+  color: #3d3f41;
+  text-transform: uppercase;
+}
+.equipo-medico__input input {
+  padding: 1rem 1.5rem;
+  border: 2px solid #eeeeee;
+  background-color: #f6f8f8;
+  transition: all 0.3s ease;
+}
+
+.equipo-medico__select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.equipo-medico__select label {
+  display: block;
+  font-weight: bold;
+  color: #3d3f41;
+  text-transform: uppercase;
+}
+.equipo-medico__select select {
+  padding: 1rem 1.5rem;
+  border: 2px solid #eeeeee;
+  background-color: #f6f8f8;
+  color: #3d3f41;
+  transition: all 0.3s ease;
+}
+.equipo-medico__select select option {
+  padding: 1rem 1.5rem;
+}
+
+header {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 8rem;
+  background-color: #5bc0eb;
+  opacity: 0.9;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  height: 7rem;
+  box-shadow: 0px 2px 12px rgb(80, 80, 80);
+}
+header img {
+  width: 80px;
+  box-shadow: 0px 2px 12px rgb(80, 80, 80);
+  margin-bottom: 1rem;
+}
+header a {
+  color: #ffffff;
+}
+header a:hover {
+  color: #4a721c;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  header {
+    padding-inline: 8rem;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    padding-inline: 5rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  header {
+    padding-inline: 1.25rem;
+  }
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .header__nav {
+    flex-direction: column;
+  }
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .header__ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .header__ul {
+    padding-inline: 2rem;
+  }
+}
+
+body > footer {
+  background-color: #5bc0eb;
+  color: #ffffff;
+  padding-inline: 10rem !important;
+  padding-block: 2rem !important;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  font-weight: bold;
+}
+body > footer section {
+  flex: 1;
+}
+body > footer section h2 {
+  text-align: start;
+}
+@media (max-width: 1024px) {
+  body > footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+body > footer p {
+  margin-block: 0.5rem;
+}
+body > footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #3d3f41;
+}
+@media (max-width: 1200px) {
+  body > footer {
+    padding-inline: 8rem;
+  }
+}
+@media (max-width: 1024px) {
+  body > footer {
+    padding-inline: 5rem;
+    flex-direction: column;
+    gap: 0rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  body > footer {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 420px) {
+  body > footer {
+    padding-inline: 1.25rem;
+  }
+}
+
+.footer__section-enlaces ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+@media (max-width: 1024px) {
+  .footer__section-enlaces ul {
+    text-align: center;
+  }
+}
+.footer__section-enlaces li {
+  width: 10rem;
+}
+@media (max-width: 1024px) {
+  .footer__section-enlaces li {
+    width: 10rem;
+  }
+}
+.footer__section-enlaces a {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #8bc34a;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0 4px 8px rgb(80, 80, 80);
+}
+.footer__section-enlaces a:hover {
+  background-color: #4a721c;
+  box-shadow: 0 6px 12px rgb(80, 80, 80);
+}
+
+.footer__section-rrss ul {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .footer__section-rrss ul {
+    margin-top: 0.5rem;
+  }
+}
+.footer__section-rrss a {
+  color: #f6f8f8;
+  padding: 1rem;
+  background-color: #8bc34a;
+}
+.footer__section-rrss a:hover {
+  background-color: #4a721c;
+}
+
+.footer__hr {
+  margin-top: 2rem;
+  height: 2px;
+  width: 100%;
+  background-color: #f6f8f8;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .footer__hr {
+    display: block;
+  }
+}
+
+/*Le doy a las secciones hijas de main un padding de 12rem para que no queden pegadas al borde*/
+main > section {
+  padding-inline: 12rem;
+  padding-block: 3rem;
+}
+@media (max-width: 1200px) {
+  main > section {
+    padding-inline: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  main > section {
+    padding-inline: 1.5rem;
+  }
+}
+
+.banner-container {
+  background-image: url("./assets/img/banner_image.jpg");
+  background-color: rgba(39, 132, 209, 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.banner-container > h1 {
+  font-size: 4rem !important;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .banner-container > h1 {
+    font-size: 2.5rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .banner-container > h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.servicios__container {
+  max-width: 100% !important;
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.servicios > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 !important;
+}
+
+.main__section-Vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__section-Vision div {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.main__section-Vision div article {
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(80, 80, 80);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.main__section-Vision div article:hover {
+  background-color: #f6f8f8;
+  box-shadow: 0 6px 12px rgb(80, 80, 80);
+}
+@media (max-width: 576px) {
+  .main__section-Vision div article {
+    padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .main__section-Vision div {
+    flex-direction: column;
+  }
+}
+
+.equipo-medico__container img {
+  width: 100px;
+}
+
+.equipo-medico__filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+  .equipo-medico__filtros {
+    flex-direction: column;
+  }
+}
+
+.profesionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-block: 1rem;
+}
+
+.contacto__container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */

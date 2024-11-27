@@ -1,0 +1,23 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/mixins" as mixins;
+
+
+/*Solo hicimos esta modificación dado que estamos ocupando buttons de bootstrap */
+.btn{
+  @include mixins.button-shadow;
+}
+
+.btn-solicitar-contacto{
+  @include mixins.button-shadow;
+  padding: 2rem 5rem;
+  background-color: colors.$primary-color-button;
+  font-weight: bold;
+  color: colors.$secondary-color;
+  text-transform: uppercase;
+  &:hover{
+    background-color: colors.$primary-color;
+    color: colors.$white;
+    
+  }
+}
+

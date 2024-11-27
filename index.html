@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Hospital Adaladid</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="/">
+        <img src="assets/img/logo.webp" alt="Logo hospital" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="pages/equipoMedico.html"> EQUIPO MEDICO</a></li>
+          <li><a href="pages/contacto.html"> CONTACTO </a></li>
+        </ul>
+        <button type="button" class="btn btn-success btn-lg">
+          RESERVAR CITA
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner-container">
+        <h1>BIENVENIDO AL HOSPITAL ADALID</h1>
+      </section>
+
+      <!-- Seccion de mision y visión lo deje con sass dado que son solo 2 cards.   -->
+      <section class="main__section-Vision">
+        <div>
+          <article>
+            <h3>Visión</h3>
+            <p>
+              Ser un centro de salud líder en atención integral, reconocido por
+              la calidad humana y profesional de nuestros servicios, donde la
+              innovación, el respeto y la excelencia médica mejoren la vida de
+              nuestros pacientes, promoviendo el bienestar de la comunidad con
+              un enfoque sostenible y accesible.
+            </p>
+          </article>
+          <article>
+            <h3>Misión</h3>
+            <p>
+              Brindar atención médica de alta calidad, personalizada y
+              eficiente, centrada en las necesidades de nuestros pacientes.
+              Fomentamos un ambiente de respeto, responsabilidad y compromiso,
+              trabajando en equipo para ofrecer servicios integrales que
+              promuevan la salud, prevengan enfermedades y mejoren la calidad de
+              vida de la comunidad.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Grilla y cards para seccion servicios hechas con bootstrap -->
+      <section>
+        <h2>SERVICIOS</h2>
+        <div class="container text-center servicios__container">
+          <div class="row servicios">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/img/appointmentsItem.jpg"
+                  alt="Consultas medicas"
+                  width="150px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CONSULTAS</h5>
+                  <p class="card-text">
+                    Ofrecemos consultas médicas especializadas con profesionales
+                    altamente capacitados, brindando diagnósticos y atención
+                    personalizada.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/img/emergencyItem.jpg"
+                  alt="Urgencias medicas"
+                  width="150px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">URGENCIAS</h5>
+                  <p class="card-text">
+                    Nuestro servicio de urgencias está disponible las 24 horas
+                    del día, brindando atención inmediata y eficiente para
+                    cualquier situación médica crítica.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/img/especialityItem.jpg"
+                  alt="Especialidades medicas"
+                  width="150px"
+                 /> 
+                <div class="card-body">
+                  <h5 class="card-title">ESPECIALIDADES</h5>
+                  <p class="card-text">
+                    Contamos con una amplia gama de especialidades médicas,
+                    desde cardiología hasta pediatría, para ofrecerte atención
+                    integral y avanzada.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/img/especialityItem.jpg"
+                  alt="Especialidades medicas"
+                  width="150px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ESPECIALIDADES II</h5>
+                  <p class="card-text">
+                    Contamos con una amplia gama de especialidades médicas,
+                    desde cardiología hasta pediatría, para ofrecerte atención
+                    integral y avanzada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grilla y cards para seccion testimonios hechas con bootstrap -->
+      <section>
+        <h2>TESTIMONIOS</h2>
+        <h6>
+          "Nuestros pacientes destacan cómo, gracias al apoyo y acompañamiento
+          de nuestros psicólogos, han logrado superar momentos difficiles,
+          mejorar su calidad de vida y recuperar la paz mental, sintiéndose
+          escuchados y comprendidos en cada etapa de su proceso terapéutico."
+        </h6>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      "Mi salud ha sido excelente, mi familia ha sido muy
+                      atentos y mi doctor ha sido muy profesional. Gracias a
+                      todo por el excelente servicio."
+                    </p>
+                    <footer class="blockquote-footer">Jose Perez</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      "Mi salud ha sido excelente, mi familia ha sido muy
+                      atentos y mi doctor ha sido muy profesional. Gracias a
+                      todo por el excelente servicio."
+                    </p>
+                    <footer class="blockquote-footer">Maria Lopez</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      "Mi salud ha sido excelente, mi familia ha sido muy
+                      atentos y mi doctor ha sido muy profesional. Gracias a
+                      todo por el excelente servicio."
+                    </p>
+                    <footer class="blockquote-footer">Ana Garcia</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer__section-enlaces">
+        <h2>ENLACES</h2>
+        <ul>
+          <li>  <button type="button" class="btn btn-success">Reservar cita</button> </li>
+          <li>  <button type="button" class="btn btn-success">Terminos</button> </li>
+          <li>  <button type="button" class="btn btn-success">Privacidad</button> </li>
+         </ul>
+        <hr class="footer__hr" />
+      </section>
+
+      <section class="footer__section-contacto">
+        <h2>CONTACTANOS</h2>
+        <p>Numero Contacto: +569 1234 5678</p>
+        <p>Correo Contacto: pablo@Adalid.cl</p>
+        <hr class="footer__hr" />
+      </section>
+
+      <section class="footer__section-rrss">
+        <h2>SIGUENOS EN RRSS</h2>
+        <ul>
+          <li> <button type="button" class="btn btn-success">FACEBOOK</button>   </li>
+          <li> <button type="button" class="btn btn-success">INSTAGRAM</button>   </li>
+          <li> <button type="button" class="btn btn-success">TWITTER</button>   </li>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>

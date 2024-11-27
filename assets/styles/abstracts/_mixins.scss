@@ -1,0 +1,10 @@
+@use "../themes/theme-adalid" as colors;
+
+@mixin box-shadow {
+    box-shadow: 0px 2px 12px colors.$shadow-color;
+}
+
+@mixin button-shadow {
+    box-shadow: 0px 4px 6px colors.$shadow-button-color, 0px 8px 15px colors.$shadow-button-color;
+
+}

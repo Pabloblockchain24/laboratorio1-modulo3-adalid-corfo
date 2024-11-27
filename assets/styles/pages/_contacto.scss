@@ -1,0 +1,98 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/variables" as breakpoints;
+@use "../abstracts/mixins" as mixins;
+
+
+
+.contacto__container{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// temporalmente comente todos los estilos de container dado que usare el ingreso de datos por prompt
+
+// .contacto__container {
+//   section {
+//     padding-inline: 20rem;
+//     @media (max-width: breakpoints.$breakpoint-sm) {
+//       padding-inline: 1rem;
+//     }
+//   }
+// }
+
+// .contacto__section-Formulario {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 1.5rem;
+//     padding: 2rem 8rem;
+//     background-color: colors.$form-color;
+//     @include mixins.box-shadow;
+//     div {
+//       display: flex;
+//       label {
+//         padding: 0.5rem;
+//         width: 7rem;
+//         @media (max-width: breakpoints.$breakpoint-md) {
+//           padding: 0.25rem;
+//           width: 6rem;
+//         }
+//         @media (max-width: breakpoints.$breakpoint-xs) {
+//           padding: 0.25rem;
+//           width: 5rem;
+//           font-size: small;
+//         }
+//       }
+//       input,
+//       textarea {
+//         padding: 0.5rem;
+//         width: 20rem;
+//         @media (max-width: breakpoints.$breakpoint-md) {
+//           padding: 0.25rem;
+//           width: 15rem;
+//         }
+//         @media (max-width: breakpoints.$breakpoint-xs) {
+//           width: 10rem;
+//         }
+//       }
+//     }
+//     @media (max-width: breakpoints.$breakpoint-md) {
+//       padding: 2rem;
+//     }
+//     @media (max-width: breakpoints.$breakpoint-xs) {
+//       padding: 1rem;
+//     }
+//   }
+//   @media (max-width: breakpoints.$breakpoint-md) {
+//     padding-inline: 5rem;
+//   }
+// }
+
+// .contacto__section-Mapa {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-block: 2rem;
+//   iframe {
+//     @media (max-width: breakpoints.$breakpoint-md) {
+//       width: 450px;
+//     }
+//     @media (max-width: breakpoints.$breakpoint-sm) {
+//       width: 350px;
+//     }
+//     @media (max-width: breakpoints.$breakpoint-xs) {
+//       width: 300px;
+//     }
+//   }
+// }

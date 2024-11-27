@@ -1,0 +1,90 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/variables" as breakpoints;
+
+/*Le doy a las secciones hijas de main un padding de 12rem para que no queden pegadas al borde*/
+main > section {
+  padding-inline: 12rem;
+  padding-block: 3rem ;  
+
+  @media (max-width: breakpoints.$breakpoint-xl) {
+    padding-inline: 8rem;
+  }
+  @media (max-width: breakpoints.$breakpoint-md) {
+    padding-inline:1.5rem;
+  }
+}
+
+.banner-container{
+  background-image: url("./assets/img/banner_image.jpg");
+  background-color: rgba($color: #2784d1, $alpha: 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.banner-container > h1{
+  font-size: 4rem !important;
+  color: white;
+  @media (max-width: breakpoints.$breakpoint-xl) {
+    font-size: 2.5rem !important;
+  }
+  @media (max-width: breakpoints.$breakpoint-sm) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.servicios__container{
+  max-width: 100% !important;	
+}
+.servicios{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.servicios > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 !important;
+}
+
+.main__section-Vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+    article {
+      padding: 1rem 2rem;
+      background-color: colors.$white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px colors.$shadow-color;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: justify;
+      line-height: 1.5rem;
+      &:hover {
+        background-color: colors.$secondary-color;
+        box-shadow: 0 6px 12px colors.$shadow-color;
+      }
+      @media (max-width: breakpoints.$breakpoint-sm) {
+        padding: 1rem 1.5rem;
+      }
+    }
+    @media (max-width: breakpoints.$breakpoint-lg) {
+      flex-direction: column;
+    }
+  }
+}
+

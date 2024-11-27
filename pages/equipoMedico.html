@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Equipo medico Adalid</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="/">
+        <img src="../assets/img/logo.webp" alt="Logo hospital" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="../pages/equipoMedico.html"> EQUIPO MEDICO</a></li>
+          <li><a href="../pages/contacto.html"> CONTACTO </a></li>
+        </ul>
+        <button type="button" class="btn btn-success btn-lg">
+          RESERVAR CITA
+        </button>
+      </nav>
+    </header>
+
+    <main class="equipo-medico__container">
+      <section class="equipo-medico__section-Bienvenida">
+        <h1>EQUIPO MEDICO ADALID</h1>
+        <h2>Nuestro compromiso como hospital Adalid</h2>
+        <h6>
+          Nuestro hospital se dedica a ofrecer atención médica de calidad, con
+          profesionales expertos y tecnología avanzada, siempre priorizando el
+          bienestar y la satisfacción de nuestros pacientes.
+        </h6>
+      </section>
+      <section class="container text-center">
+        <h2>Nuestro equipo</h2>
+        <div class="equipo-medico__filtros">
+
+          <div class="equipo-medico__input">
+            <label for="filtro">Experiencia:</label>
+            <input
+            type="number"
+            id="filtroExperiencia"
+            placeholder="Ingrese años experiencia"
+            oninput="filtrarEquipo()"
+          />
+          </div>
+
+          <div class="equipo-medico__select"> 
+            <label htmlFor="Servicio medico">Servicio medico:</label>
+            <select id="filtroServicio" oninput="filtrarEquipo()" placeholder="Selecciona un servicio medico ">
+              <option selected value="">Ingrese servicio medico </option>
+              <option value="Traumatologia">Traumatología </option>
+              <option value="Pediatria">Pediatria</option>
+              <option value="Oftalmologia">Oftalmología</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row" id="equipo-medico"></div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer__section-enlaces">
+        <h2>ENLACES</h2>
+        <ul>
+          <li>
+            <button type="button" class="btn btn-success">Reservar cita</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-success">Terminos</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-success">Privacidad</button>
+          </li>
+        </ul>
+        <hr class="footer__hr" />
+      </section>
+
+      <section class="footer__section-contacto">
+        <h2>CONTACTANOS</h2>
+        <p>Numero Contacto: +569 1234 5678</p>
+        <p>Correo Contacto: pablo@Adalid.cl</p>
+        <hr class="footer__hr" />
+      </section>
+
+      <section class="footer__section-rrss">
+        <h2>SIGUENOS EN RRSS</h2>
+        <ul>
+          <li>
+            <button type="button" class="btn btn-success">FACEBOOK</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-success">INSTAGRAM</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-success">TWITTER</button>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+</html>

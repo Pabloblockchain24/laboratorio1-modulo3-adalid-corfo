@@ -1,0 +1,49 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/mixins" as mixins;
+
+.equipo-medico__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  label {
+    display: block;
+    font-weight: bold;
+    color: colors.$title-color;
+    text-transform: uppercase;
+  }
+
+  input {
+    padding: 1rem 1.5rem;
+    border: 2px solid colors.$form-color;
+    background-color: colors.$secondary-color;
+    transition: all 0.3s ease;
+  }
+}
+
+.equipo-medico__select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  label {
+    display: block;
+    font-weight: bold;
+    color: colors.$title-color;
+    text-transform: uppercase;
+  }
+
+  select {
+    padding: 1rem 1.5rem;
+    border: 2px solid colors.$form-color;
+    background-color: colors.$secondary-color;
+    color: colors.$title-color;
+    transition: all 0.3s ease;
+
+    option {
+      padding: 1rem 1.5rem;
+    }
+  }
+}
