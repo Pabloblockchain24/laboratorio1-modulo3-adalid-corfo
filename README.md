@@ -249,6 +249,91 @@ La función `solicitarContacto` solicita al usuario que ingrese tres datos: su n
 - **`tieneArroba(email)`**: Verifica si el correo electrónico contiene el símbolo `@`. Retorna `true` si lo encuentra, de lo contrario, retorna `false`.
 - **`telefonoValido(telefono)`**: Verifica si el número de teléfono tiene exactamente 11 caracteres y si es un número. Retorna `true` si es válido, de lo contrario, `false`.
 
+## Complejidad de los algoritmos utilizados, aplicando conceptos de Big-O y complejidad ciclomática.
+
+- Las imágenes utilizadas en este proyecto fueron obtenidas desde https://www.chatgpt.com
+
+
+## Explicación de cómo se implementaron los objetos JSON y las operaciones realizadas (clonación, merge, recorrido).
+
+### Operaciones realizadas
+
+#### Clonación de objetos
+Se realizó la clonación de un objeto doctor para generar una nueva copia con modificaciones específicas. Esto se logró utilizando el operador de propagación (`spread operator`).
+
+**Ejemplo:**
+const doctorClonado = { ...doctorOriginal, nombre: "Dr. Clonado", anios_experiencia: 99 };
+
+#### Merge de objetos
+La fusión combina las propiedades de varios objetos en uno solo, utilizando nuevamente el operador de propagación. Esto se usa para extender la información de un doctor con datos adicionales como servicios disponibles.
+
+**Ejemplo:**
+const serviciosDisponibles = { servicios: ["Cirugía", "Consultas", "Emergencias"] };
+const doctorFusionado = { ...doctorOriginal, ...serviciosDisponibles };
+
+#### Recorrido de objetos
+El sistema permite recorrer, filtrar y ordenar una lista de doctores almacenada como JSON.
+Los doctores se filtran según los valores seleccionados en la interfaz (por ejemplo, experiencia mínima o especialidad).
+
+**Ejemplo:**
+doctores = doctores.filter(doctor => doctor.anios_experiencia >= parseInt(filtroExperiencia));
+doctores = doctores.filter(doctor => doctor.especialidad.toLowerCase().includes(filtroServicio.toLowerCase()));
+
+
+## Explicación de las estructuras de datos implementadas (arreglos, pilas, colas) y su utilidad en el proyecto.
+
+En este proyecto se utilizan distintas estructuras de datos (arreglos, pilas y colas) para gestionar y organizar información de manera eficiente. A continuación, se describe cada estructura, su implementación y utilidad en el proyecto.
+
+### Arreglos
+Los **arreglos** son la estructura de datos base en este proyecto, utilizados para almacenar listas de elementos como doctores, citas y contactos. Métodos como push, pop, shift y filter facilitan la adición, eliminación y búsqueda de elementos en la lista.
+
+Se utiliza un arreglo para almacenar citas médicas:
+const citas = [];
+agregarCita(citas, 'cita1');
+agregarCita(citas, 'cita2');
+
+### Pilas
+Las pilas son una estructura de datos LIFO (Last In, First Out), donde el último elemento que se agrega es el primero en salir. En el proyecto, se utilizan pilas para manejar las citas médicas.
+
+Ejemplo:
+function manejarPila() {
+  const citas = [];
+  agregarCita(citas, 'cita1');
+  console.log('La última cita agendada es:', citas[citas.length - 1]);
+}
+
+### Colas
+Las colas son una estructura de datos FIFO (First In, First Out), donde el primer elemento que se agrega es el primero en salir. Se implementa para gestionar los contactos en una lista de espera.
+
+Ejemplo:
+function manejarCola() {
+  const colaContacto = [];
+  colaContacto.push('contacto1');
+  console.log('El próximo contacto a atender es:', colaContacto.shift());
+}
+
+## Descripción de los algoritmos implementados y su complejidad.
+Este proyecto utiliza varios algoritmos clave para gestionar datos relacionados con doctores. A continuación, se describen brevemente:
+
+### 1. Renderización de Doctores
+**Función:** `renderizarDoctores`  
+- **Descripción:** Recorre la lista de doctores (`forEach`), genera dinámicamente tarjetas HTML y las inserta en el DOM.  
+
+### 2. Filtrado y Ordenamiento
+**Función:** `filtrarEquipo`  
+- **Descripción:** Filtra doctores por experiencia y especialidad, luego los ordena por años de experiencia.  
+
+### 3. Búsqueda de Doctores
+**Función:** `buscarDoctor`  
+- **Descripción:** Encuentra un doctor específico por nombre utilizando `find`.  
+
+### 4. Agregar y Eliminar
+**Funciones:** `agregarDoctor`, `eliminarDoctor`  
+- **Descripción:** Utilizan `push` para añadir y `pop` para eliminar doctores del arreglo.  
+
+### 5. Clonación y Fusión
+**Operadores:** `...` (Spread)  
+- **Descripción:** Clona objetos y fusiona propiedades
 
 
 ## Créditos
