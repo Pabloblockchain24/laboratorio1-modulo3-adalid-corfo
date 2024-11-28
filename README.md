@@ -1,8 +1,8 @@
-# Taller 2 - Módulo 3 Adalid Corfo
+# Laboratorio 1 - Módulo 3 Adalid Corfo
 
 ## Descripción del Proyecto
 
-Este proyecto es una práctica para el Módulo 3 del curso Adalid Corfo. Se trata de un sitio web simple que presenta un hospital médico con tres secciones principales: Home, Equipo Médico y Contacto. El objetivo es implementar un sitio web modular utilizando HTML, SCSS, CSS y JavaScript, se han aplicado media queries y modularización de estilos mediante el uso de SASS para una estructura más clara y mantenible, además se usa el framework de css Bootstrap para optimizar el desarrollo del proyecto, incorporando componentes como buttons, forms, grids y cards y JavaScript para manejar filtros y mostrar datos de manera dinámica.
+Este proyecto es un taller para el Módulo 3 del curso Adalid Corfo. Se trata de un sitio web simple que presenta un hospital médico con tres secciones principales: Home, Equipo Médico y Contacto. El objetivo es implementar un sitio web modular utilizando HTML, SCSS, CSS y JavaScript, se han aplicado media queries y modularización de estilos mediante el uso de SASS para una estructura más clara y mantenible, además se usa el framework de css Bootstrap para optimizar el desarrollo del proyecto, incorporando componentes como buttons, forms, grids y cards y JavaScript para manejar filtros y mostrar datos de manera dinámica.
 
 ## Instrucciones para Visualizar el Proyecto
 
@@ -15,7 +15,7 @@ Este proyecto es una práctica para el Módulo 3 del curso Adalid Corfo. Se trat
 2. Navega a la carpeta del proyecto:
 
     ```bash
-    cd ejercicio-taller2-modulo3-adalid-corfo
+    cd laboratorio1-modulo3-adalid-corfo
     ```
 
 3. Instala las dependencias de SASS si aún no lo has hecho:
@@ -35,7 +35,7 @@ Este proyecto es una práctica para el Módulo 3 del curso Adalid Corfo. Se trat
 ## Estructura de carpetas y archivos
 
 ```
-taller2-modulo3-adalid-corfo/
+laboratorio1-modulo3-adalid-corfo/
 │
 ├── index.html              # Página principal (Home)
 ├── pages/
@@ -251,7 +251,66 @@ La función `solicitarContacto` solicita al usuario que ingrese tres datos: su n
 
 ## Complejidad de los algoritmos utilizados, aplicando conceptos de Big-O y complejidad ciclomática.
 
-- Las imágenes utilizadas en este proyecto fueron obtenidas desde https://www.chatgpt.com
+La eficiencia del código se mide utilizando Big-O para determinar el tiempo y espacio necesarios al crecer los datos, así como la complejidad ciclomática para evaluar su mantenibilidad.
+
+---
+
+### Complejidad de los Algoritmos (Big-O)
+
+#### Renderización de Doctores
+**Función:** `renderizarDoctores`  
+- **Descripción:** Itera sobre el arreglo de doctores utilizando `forEach` para generar tarjetas HTML dinámicamente.  
+- **Complejidad Temporal:** \( O(n) \), donde \( n \) es el número de doctores.  
+- **Complejidad Espacial:** Depende del tamaño del DOM generado.
+
+#### Filtrado de Doctores
+**Función:** `filtrarEquipo`  
+- **Descripción:**  
+  - Aplica filtros a los doctores utilizando `filter` y ordena los resultados con `sort`.  
+  - Combina objetos utilizando el operador `...` para clonar y fusionar.  
+- **Complejidad Temporal:**  
+  - Filtrado: \( O(n) \) por cada filtro aplicado.  
+  - Ordenamiento: \( O(n \log n) \).  
+  - Total: Dominado por el ordenamiento, \( O(n \log n) \).  
+- **Complejidad Espacial:** \( O(n) \) para almacenar los resultados intermedios.
+
+#### Búsqueda de Doctores
+**Función:** `buscarDoctor`  
+- **Descripción:** Busca un doctor por nombre utilizando `find`.  
+- **Complejidad Temporal:** \( O(n) \), en el peor caso, se recorre todo el arreglo.  
+- **Complejidad Espacial:** \( O(1) \).
+
+#### Agregar y Eliminar Doctores
+**Funciones:** `agregarDoctor`, `eliminarDoctor`  
+- **Descripción:** Utilizan `push` y `pop` para modificar el arreglo.  
+- **Complejidad Temporal:** \( O(1) \).  
+- **Complejidad Espacial:** \( O(1) \).
+
+#### Clonación y Fusión de Objetos
+**Operadores:** `...`  
+- **Descripción:** Clona y combina propiedades de objetos.  
+- **Complejidad Temporal:** \( O(k) \), donde \( k \) es el número de propiedades del objeto.  
+- **Complejidad Espacial:** \( O(k) \).
+
+---
+
+### Complejidad Ciclomática
+
+La complejidad ciclomática mide el número de caminos independientes en el código. Se calcula como:  
+**M = E - N + 2**, donde \( E \) son los bordes y \( N \) los nodos del flujo de control.
+
+#### Ejemplo: `filtrarEquipo`
+- **Condiciones:**  
+  - Filtro por especialidad.  
+  - Filtro por experiencia.  
+- **Flujo de Control:**  
+  1. Si `filtroServicio` existe, filtrar por especialidad.  
+  2. Si `filtroExperiencia` existe, filtrar por experiencia.  
+  3. Ordenar resultados.  
+- **Cálculo:** \( M = 5 - 4 + 2 = 3 \).
+
+La complejidad ciclomática es baja en la mayoría de las funciones, oscilando entre 2 y 4, lo que indica que el código es fácil de mantener y probar.
+
 
 
 ## Explicación de cómo se implementaron los objetos JSON y las operaciones realizadas (clonación, merge, recorrido).
