@@ -73,9 +73,8 @@ async function renderizarDoctores(doctores) {
     });
 }
 
-async function filtrarEquipo(doctores ) {
+async function filtrarEquipo(doctores) {
   try {
-
     const doctorOriginal = doctores[0];
     const doctorClonado = { ...doctorOriginal, nombre: "Dr. Clonado", anios_experiencia: 99 };
     console.log('Doctor Original:', doctorOriginal);

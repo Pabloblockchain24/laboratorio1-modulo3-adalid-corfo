@@ -47,13 +47,13 @@
             type="number"
             id="filtroExperiencia"
             placeholder="Ingrese años experiencia"
-            oninput="filtrarEquipo()"
+            oninput="cargarDoctores()"
           />
           </div>
 
           <div class="equipo-medico__select"> 
             <label htmlFor="Servicio medico">Servicio medico:</label>
-            <select id="filtroServicio" oninput="filtrarEquipo()" placeholder="Selecciona un servicio medico ">
+            <select id="filtroServicio" oninput="cargarDoctores()" placeholder="Selecciona un servicio medico ">
               <option selected value="">Ingrese servicio medico </option>
               <option value="Traumatologia">Traumatología </option>
               <option value="Pediatria">Pediatria</option>
