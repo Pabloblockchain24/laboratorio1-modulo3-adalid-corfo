@@ -47,16 +47,23 @@ async function renderizarDoctores(doctores) {
     const equipoContainer = document.getElementById('equipo-medico');
     equipoContainer.innerHTML = '';
     doctores.forEach((doctor) => {
+      const{
+        nombre,
+        imagen,
+        especialidad,
+        anios_experiencia,
+        descripcion        
+      } = doctor
       console.log('El doctor a renderizar es', doctor)
       const cardHTML = `
         <div class="col profesionales">
           <div class="card" >
-            <img src="${doctor.imagen}" alt="${doctor.nombre}" class="card__image-Resizing" />
+            <img src="${imagen}" alt="${nombre}" class="card__image-Resizing" />
             <div class="card-body">
-              <h5 class="card-title">${doctor.nombre}</h5>
-              <p class="card-text">${doctor.servicio_medico}</p>
-              <p class="card-text">${doctor.experiencia} años de experiencia.</p>
-              <p class="card-text">${doctor.descripcion}</p>
+              <h5 class="card-title">${nombre}</h5>
+              <p class="card-text">${especialidad}</p>
+              <p class="card-text">${anios_experiencia} años de experiencia.</p>
+              <p class="card-text">${descripcion}</p>
             </div>
           </div>
         </div>
@@ -73,10 +80,10 @@ async function filtrarEquipo() {
     const filtroServicio = document.getElementById('filtroServicio').value;
 
     if (filtroServicio) {
-      doctores = doctores.filter(doctor => doctor.servicio_medico.toLowerCase().includes(filtroServicio.toLowerCase()));
+      doctores = doctores.filter(doctor => doctor.especialidad.toLowerCase().includes(filtroServicio.toLowerCase()));
     }
     if (filtroExperiencia) {
-      doctores = doctores.filter(doctor => doctor.experiencia >= parseInt(filtroExperiencia));
+      doctores = doctores.filter(doctor => doctor.anios_experiencia >= parseInt(filtroExperiencia));
     }
     console.log('Los doctores filtrados son: ', doctores)
     renderizarDoctores(doctores);

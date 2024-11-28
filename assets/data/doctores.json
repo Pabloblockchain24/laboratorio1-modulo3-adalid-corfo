@@ -1,50 +1,74 @@
 [
-    {
-      "nombre": "Dr. Juan Perez",
-      "especialidad": "Oftalmologia",
-      "descripcion": "Dr. Juan Perez tiene 20 años de experiencia en la salud publica y privada especializandose en Oftalmologia, destacandose por el tratemiento de enfermedades en la retina y cornea.",
-      "imagen": "../assets/img/dr_juan_perez.webp",
-      "anios_experiencia": 20,
-      "disponibilidad": "Martes y Jueves",
-      "informacion_adicional" : {
-        "contacto": "+569 1234 5678",
-        "horas_disponibles": "9:00 - 18:00"
-      }
-    },
-    {
-      "nombre": "Dra. Maria Gonzalez",
-      "servicio_medico": "Traumatologia",
-      "descripcion": "La Dra. Maria Gonzalez cuenta con 4 años de experiencia en traumatologia, destacándose en el tratamiento de enfermedades oceas y prevención de lesiones en la columna.",
-      "imagen": "../assets/img/dr_maria_gonzalez.webp",
-      "experiencia": 4
-    },
-    {
-      "nombre": "Dr. Carlos Ramirez",
-      "servicio_medico": "Pediatria",
-      "descripcion": "Con más de 12 años de experiencia, el Dr. Carlos Ramirez se dedica al cuidado integral de la salud infantil, combinando un enfoque preventivo y tratamientos avanzados.",
-      "imagen": "../assets/img/dr_carlos_ramirez.webp",
-      "experiencia": 12
-    },
-    {
-      "nombre": "Dra. Ana Martinez",
-      "servicio_medico": "Traumatologia",
-      "descripcion": "Especialista en traumatologia con 3 años de trayectoria, la Dra. Ana Martinez es reconocida por su enfoque innovador en el tratamiento del huesos y apoyo a pacientes y familiares.",
-      "imagen": "../assets/img/dr_maria_gonzalez.webp",
-      "experiencia": 3
-    },
-    {
-      "nombre": "Dr. Ricardo López",
-      "servicio_medico": "Pediatria",
-      "descripcion": "El Dr. Ricardo López es un experto en pediatria con 15 años de experiencia. Su enfoque incluye el diagnóstico y tratamiento de enfermedades en niños, destacándose en prevención y rehabilitación.",
-      "imagen": "../assets/img/dr_carlos_ramirez.webp",
-      "experiencia": 15
-    },
-    {
-      "nombre": "Dra. Elena Fernández",
-      "servicio_medico": "Pediatria",
-      "descripcion": "Con 2 años de experiencia, la Dra. Elena Fernández se especializa en el cuidado de la piel y el tratamiento de enfermedades dermatológicas en niños, ofreciendo soluciones avanzadas para condiciones complejas.",
-      "imagen": "../assets/img/dr_maria_gonzalez.webp",
-      "experiencia": 2
+  {
+    "nombre": "Dr. Juan Perez",
+    "especialidad": "Oftalmologia",
+    "descripcion": "Dr. Juan Perez tiene 20 años de experiencia en la salud publica y privada especializandose en Oftalmologia, destacandose por el tratemiento de enfermedades en la retina y cornea.",
+    "imagen": "../assets/img/dr_juan_perez.webp",
+    "anios_experiencia": 20,
+    "disponibilidad": "Martes y Jueves",
+    "informacion_adicional": {
+      "contacto": "+569 1234 5678",
+      "horas_disponibles": "9:00 - 18:00"
     }
-  ]
-  
+  },
+  {
+    "nombre": "Dra. Maria Gonzalez",
+    "especialidad": "Traumatologia",
+    "descripcion": "La Dra. Maria Gonzalez cuenta con 4 años de experiencia en traumatologia, destacándose en el tratamiento de enfermedades óseas y prevención de lesiones en la columna.",
+    "imagen": "../assets/img/dr_maria_gonzalez.webp",
+    "anios_experiencia": 4,
+    "disponibilidad": "Lunes y Miércoles",
+    "informacion_adicional": {
+      "contacto": "+569 2345 6789",
+      "horas_disponibles": "10:00 - 17:00"
+    }
+  },
+  {
+    "nombre": "Dr. Carlos Ramirez",
+    "especialidad": "Pediatria",
+    "descripcion": "Con más de 12 años de experiencia, el Dr. Carlos Ramirez se dedica al cuidado integral de la salud infantil, combinando un enfoque preventivo y tratamientos avanzados.",
+    "imagen": "../assets/img/dr_carlos_ramirez.webp",
+    "anios_experiencia": 12,
+    "disponibilidad": "Viernes y Sábado",
+    "informacion_adicional": {
+      "contacto": "+569 3456 7890",
+      "horas_disponibles": "8:00 - 15:00"
+    }
+  },
+  {
+    "nombre": "Dra. Ana Martinez",
+    "especialidad": "Traumatologia",
+    "descripcion": "Especialista en traumatologia con 3 años de trayectoria, la Dra. Ana Martinez es reconocida por su enfoque innovador en el tratamiento de huesos y apoyo a pacientes y familiares.",
+    "imagen": "../assets/img/dr_maria_gonzalez.webp",
+    "anios_experiencia": 3,
+    "disponibilidad": "Lunes y Viernes",
+    "informacion_adicional": {
+      "contacto": "+569 4567 8901",
+      "horas_disponibles": "12:00 - 18:00"
+    }
+  },
+  {
+    "nombre": "Dr. Ricardo López",
+    "especialidad": "Pediatria",
+    "descripcion": "El Dr. Ricardo López es un experto en pediatria con 15 años de experiencia. Su enfoque incluye el diagnóstico y tratamiento de enfermedades en niños, destacándose en prevención y rehabilitación.",
+    "imagen": "../assets/img/dr_juan_perez.webp",
+    "anios_experiencia": 15,
+    "disponibilidad": "Miércoles y Sábado",
+    "informacion_adicional": {
+      "contacto": "+569 5678 9012",
+      "horas_disponibles": "9:00 - 16:00"
+    }
+  },
+  {
+    "nombre": "Dra. Elena Fernández",
+    "especialidad": "Pediatria",
+    "descripcion": "Con 2 años de experiencia, la Dra. Elena Fernández se especializa en el cuidado de la piel y el tratamiento de enfermedades dermatológicas en niños, ofreciendo soluciones avanzadas para condiciones complejas.",
+    "imagen": "../assets/img/dr_maria_gonzalez.webp",
+    "anios_experiencia": 2,
+    "disponibilidad": "Martes y Jueves",
+    "informacion_adicional": {
+      "contacto": "+569 6789 0123",
+      "horas_disponibles": "13:00 - 19:00"
+    }
+  }
+]
